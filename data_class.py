@@ -71,3 +71,7 @@ print(messages.dequeue())
 print(messages.dequeue())
 print(messages.dequeue())
 print(messages.dequeue())
+
+messages = PriorityQueue()
+messages.enqueue_with_priority(CRITICAL, wipers)
+messages.enqueue_with_priority(IMPORTANT, hazard_lights)
