@@ -2,3 +2,8 @@ print("************  PROGRAMMED BY  ************")
 print("********* HYDEE LYN C. PALISOC *********\n")
 
 from graph4 import City, load_graph
+
+nodes, graph = load_graph("roadmap.dot", City.from_dict)
+
+for neighbor, weights in graph[nodes["london"]].items():
+    print(weights["distance"], neighbor.name)
