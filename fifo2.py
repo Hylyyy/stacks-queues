@@ -9,4 +9,4 @@ print(len(fifo))
 for element in fifo:
     print(element)
 
-len(fifo)
+print("The current queues:", len(fifo))
