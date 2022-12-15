@@ -8,7 +8,7 @@ heappush(fruits, "orange")
 heappush(fruits, "apple")
 heappush(fruits, "banana")
 
-print(heappop(fruits))
+print("===>:", heappop(fruits))
 
 print(fruits)
 
