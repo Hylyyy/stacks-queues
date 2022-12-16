@@ -3,10 +3,11 @@ print("********* HYDEE LYN C. PALISOC *********\n")
 
 from typing import NamedTuple
 
+
 class City(NamedTuple):
     name: str
     country: str
-    year: int | None
+    year: int
     latitude: float
     longitude: float
 
