@@ -1,8 +1,11 @@
+from typing import NamedTuple
+
 print("************  PROGRAMMED BY  ************")
 print("********* HYDEE LYN C. PALISOC *********\n")
 
-from typing import NamedTuple
+
 import networkx as nx
+
 
 class City(NamedTuple):
     name: str
@@ -19,8 +22,10 @@ class City(NamedTuple):
             year=int(attrs["year"]) or None,
             latitude=float(attrs["latitude"]),
             longitude=float(attrs["longitude"]),
-    )
-    
+
+        )
+
+
 def load_graph(filename, node_factory):
     graph = nx.nx_agraph.read_dot(filename)
     nodes = {
