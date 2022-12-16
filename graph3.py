@@ -1,7 +1,7 @@
+from typing import NamedTuple
+
 print("************  PROGRAMMED BY  ************")
 print("********* HYDEE LYN C. PALISOC *********\n")
-
-from typing import NamedTuple
 
 
 class City(NamedTuple):
@@ -21,4 +21,3 @@ class City(NamedTuple):
             longitude=float(attrs["longitude"]),
         )
 
-        
